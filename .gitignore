@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # Output files
-.lab
-.ttl
+*.lab
+*.ttl
