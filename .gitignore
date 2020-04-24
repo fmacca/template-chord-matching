@@ -132,5 +132,7 @@ dmypy.json
 *.lab
 *.ttl
 
-# Music Files
-*.mp3
+# Copyrighted Music Files
+The Beatles Annotations/*.mp3
+The Beatles Annotations/*/*.mp3
+The Beatles Annotations/*/*/*.mp3
