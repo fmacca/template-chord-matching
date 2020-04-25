@@ -128,8 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Output files
-*.lab
+# Not related Sonic Visualizer output files
+*.svl
 *.ttl
 
 # Copyrighted Music Files
