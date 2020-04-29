@@ -18,3 +18,5 @@ In the repository you will find:
 * ***Application.ipynb***: The implementation of the model that allows you to chose a music file and performs the analysis on the selected file. The hyperparameters are set to values that performed better in the tutorial and on The Beatles dataset. It is possible to change them.
 
 ## The Algorithm
+The algorithm implemented is the one described in Section 5.2 of "Müller, Meinard. (2015). *Fundamentals of Music Processing*. 10.1007/978-3-319-21945-5.". In particular the templates used are those that con include harmonics and some preprocessing of chorma is apllied (compression and temporal smoothing).
+In addition to what is presented on the book, I have included a postprocessing smoother in the form of a KNN classifier, that uses time as its only feature and the chords labels estimated through template matching as target. The details of the implementation are explained in *Template_matching_tutorial.ipynb*
