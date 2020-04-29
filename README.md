@@ -20,3 +20,6 @@ In the repository you will find:
 ## The Algorithm
 The algorithm implemented is the one described in Section 5.2 of "Müller, Meinard. (2015). *Fundamentals of Music Processing*. 10.1007/978-3-319-21945-5.". In particular the templates used are those that can include harmonics and some preprocessing of chorma is apllied (compression and temporal smoothing).
 In addition to the method presented in the book, I have included a postprocessing smoother in the form of a KNN classifier, that uses time as its only feature and the chords labels estimated through template matching as target. The details of the implementation are explained in *Template_matching_tutorial.ipynb*
+
+## Results
+The implemented algorithm seems to perform sufficiently well on music samples containing a recording of a single intrument. In most of the cases the misclassification error is low. However when dealing with full mixed songs, that contain also melodic and percussive components, the performance is really bad. The misclassified frames are around the 70% of the total, showing that more advanced methods (such as Hidden Markov Models) should be used to takle harmony in songs.
