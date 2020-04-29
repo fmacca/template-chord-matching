@@ -1,4 +1,4 @@
-# template-chord-matching
+# template-chord-matching :musical_keyboard:
 This is the Github repository for my project "*Template matching algorithm for chord recognition*" for the Audio Signal course @ Politecnico di Milano.
 
 ## Content of this repo
