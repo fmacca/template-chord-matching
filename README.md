@@ -4,7 +4,7 @@ This is the Github repository for my project "*Template matching algorithm for c
 ## Content of this repo
 In the repository you will find:
 ### Data
-* ***Chord Examples***: A folder that contains two piano recordings of triads (as chords and as arpeggios) alongside their correct chord annotations.
+* ***Chord Examples***: A folder that contains piano, guitar and synth recordings alongside their correct handmade chords annotations.
 * ***The Beatles Annotations***: The reference annotations for songs by The Beatles as provided by Chris Harte on [Isophonics](http://isophonics.net/content/reference-annotations-beatles "The Beatles Annotations").
 * ***The Beatles dataset.csv***: A .csv dataset containing the chroma representation and the reference annotations for songs by The Beatles. The dataset has been created in preprocessing with the script "*Resources/Create The Beatles dataset.ipynb*"
 
@@ -24,4 +24,6 @@ In addition to the method presented in the book, I have included a postprocessin
 I have tried to add to the preprocessing phase a decomposition into harmonic and percussive components and to run the algorithm only on the harmonic component. It did not prove to give substancial improvements so it is not present in this version of the code.
 
 ## Results
-The implemented algorithm seems to perform sufficiently well on music samples containing a recording of a single intrument. In most of the cases the misclassification error is low. However when dealing with full mixed songs, that contain also melodic and percussive components, the performance is really bad. The misclassified frames are around the 70% of the total, showing that more advanced methods (such as Hidden Markov Models) should be used to takle harmony in songs.
+The implemented algorithm seems to perform sufficiently well on music samples containing a recording of a single intrument. In most of the cases the misclassification error is low. However when dealing with full mixed songs, that contain also melodic and percussive components, the performance is really poor. The misclassified frames are around the 70% of the total, showing that more advanced methods (such as Hidden Markov Models) should be used to takle harmony in songs.
+
+You can try it by yourself by appliyng the algorithm to the piano, guitar and synth example recordings. It performs generally well on piano and guitar (that simply play chords), on synth recordings (that contains some melodic elements) the algorithm is already bad!
